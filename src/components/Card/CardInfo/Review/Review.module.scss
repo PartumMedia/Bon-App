@@ -1,0 +1,44 @@
+.Review {
+  width: 95%;
+  background-color: #0798e5;
+  background-image: url("../../../../assets/imgs/Comment-Background.svg");
+  border-radius: 0.8rem;
+  box-shadow: 0.4rem 0.4rem 0.8rem rgba(0, 0, 0, 0.15);
+  margin: 10% auto;
+  color: #fff;
+
+  .Name {
+    text-align: center;
+    font-size: 1.8rem;
+    padding-top: 5%;
+  }
+
+  .Rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    i {
+      color: #ffde27;
+      font-size: 2rem;
+      margin: 8%;
+      padding: 15% 0 5%;
+    }
+
+    .Star {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+    }
+  }
+
+  .Comment {
+    display: flex;
+    flex-direction: row;
+
+    p {
+      padding: 5% 5% 10%;
+      font-size: 1.3rem;
+    }
+  }
+}

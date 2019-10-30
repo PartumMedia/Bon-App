@@ -1,0 +1,40 @@
+.Footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 5%;
+  background-color: #0093ae;
+  background-image: linear-gradient(to right, #0093ae, #0798e3);
+  bottom: 0;
+  p {
+    padding: 2%;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .Designer {
+    font-weight: bold;
+    color: #eafcff;
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .Footer {
+    p {
+      padding: 2%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .Footer {
+    p {
+      padding: 1%;
+    }
+  }
+}

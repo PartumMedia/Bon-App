@@ -1,0 +1,138 @@
+.Container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+}
+
+.AddRestaurant {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background-image: url("../../assets/imgs/Window-Background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  padding: 5%;
+  transform: translateX(-50%);
+  border-radius: 0.8rem;
+  box-shadow: 0.7rem 0.7rem 1.5rem rgba(0, 0, 0, 0.15);
+  z-index: 3;
+
+  h1 {
+    font-size: 2.5rem;
+    padding: 20% 0 5%;
+    color: #006990;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 5%;
+    ::placeholder {
+      color: #0070a8;
+    }
+  }
+
+  .Input {
+    margin: 4% 0;
+    height: 3.4rem;
+    padding: 0 0 0 2%;
+    border-radius: 0.8rem;
+    border: none;
+    box-shadow: 0.4rem 0.4rem 0.8rem rgba(0, 0, 0, 0.15);
+    outline: none;
+    font-size: 1.2rem;
+    color: #0070a8;
+  }
+
+  .Exit {
+    position: absolute;
+    top: 3%;
+    right: 5%;
+
+    i {
+      font-size: 4rem;
+      color: #006990;
+    }
+  }
+
+  .Submit {
+    display: block;
+    margin: 13% auto 5%;
+    border-radius: 100rem;
+    padding: 5% 15%;
+    box-shadow: 0.4rem 0.6rem 0.8rem rgba(0, 0, 0, 0.12);
+    border: none;
+    background-color: #0093ad;
+    background-image: linear-gradient(to right, #0081b1, #18adfa);
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .AddRestaurant {
+    width: 60%;
+    top: 1%;
+
+    h1 {
+      font-size: 3rem;
+      padding: 10% 0 5%;
+      color: #006990;
+    }
+
+    .Exit {
+      position: absolute;
+      top: 3%;
+      right: 5%;
+
+      i {
+        font-size: 4.5rem;
+        color: #006990;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .AddRestaurant {
+    width: 40%;
+    top: 5%;
+
+    h1 {
+      font-size: 3rem;
+      padding: 10% 0 5%;
+      color: #006990;
+    }
+
+    .Input {
+      margin: 4% 0;
+      height: 5vh;
+      padding: 0 0 0 2%;
+      border-radius: 0.8rem;
+      border: none;
+      box-shadow: 0.4rem 0.4rem 0.8rem rgba(0, 0, 0, 0.15);
+      outline: none;
+      font-size: 1.2rem;
+      color: #0070a8;
+    }
+
+    .Exit {
+      position: absolute;
+      top: 3%;
+      right: 5%;
+
+      i {
+        font-size: 4.5rem;
+        color: #006990;
+      }
+    }
+  }
+}

@@ -1,0 +1,145 @@
+.Container {
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(#eafcff, 0.1);
+}
+
+.CardInfo {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  background-color: #eafcff;
+  background-image: url("../../../assets/imgs/Window-Background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 80%;
+  height: 85%;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0.8rem;
+  box-shadow: 0.7rem 0.7rem 1.5rem rgba(0, 0, 0, 0.15);
+  z-index: 4;
+  overflow: scroll;
+
+  .Exit {
+    position: sticky;
+    top: 0;
+    margin: 2%;
+    i {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1% 3%;
+      font-size: 4rem;
+      color: #006990;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: #006990;
+    margin-bottom: 3%;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0 0 10%;
+  }
+
+  hr {
+    margin: 12% 20%;
+    height: 0.4rem;
+    background-color: #006990;
+    border-radius: 10rem;
+    border: none;
+  }
+
+  .Contact {
+    width: 90%;
+    text-align: center;
+    color: #0798e5;
+    padding: 5% 5% 0;
+    margin: auto;
+
+    div {
+      padding: 2%;
+      font-weight: bold;
+    }
+
+    i {
+      font-size: 2rem;
+      color: #006990;
+    }
+
+    span {
+      font-size: 1.3rem;
+      margin-left: 3%;
+    }
+  }
+
+  .Reviews {
+    width: 100%;
+    color: #006990;
+    padding: 5%;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  .CardInfo {
+    background-color: #eafcff;
+    background-image: url("../../../assets/imgs/Window-Background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 65%;
+    height: 60%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .CardInfo {
+    height: 85%;
+    width: 50%;
+
+    .Exit {
+      i {
+        font-size: 5rem;
+      }
+    }
+    h1 {
+      font-size: 3rem;
+    }
+
+    .Contact {
+      width: 90%;
+      text-align: center;
+      color: #0798e5;
+      padding: 5% 5% 0;
+      margin: auto;
+
+      div {
+        padding: 2%;
+        font-weight: bold;
+      }
+
+      i {
+        font-size: 3rem;
+        color: #006990;
+      }
+
+      span {
+        font-size: 2rem;
+        margin-left: 3%;
+      }
+    }
+  }
+}

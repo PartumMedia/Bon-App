@@ -1,0 +1,10 @@
+.Map {
+  height: 50vh;
+  position: relative;
+}
+
+@media only screen and (min-width: 1000px) {
+  .Map {
+    height: 100%;
+  }
+}

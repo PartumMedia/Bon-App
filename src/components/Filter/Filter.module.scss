@@ -1,0 +1,11 @@
+.Filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1% 0;
+  background-color: #0093ad;
+  background-image: linear-gradient(to right, #0093ae, #0798e3);
+  box-shadow: 0 0.5rem 0.7rem rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  width: 100%;
+}
